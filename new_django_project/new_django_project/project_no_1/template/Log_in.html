@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+<head><link rel="stylesheet" href="">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/th.jpg');
+            background-size: cover; /* Ensures the background image covers the entire body */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+        }
+    </style>
+</head>
+{% block body %}
+<div class="container">
+    <h2>Register Page</h2>
+    <select class="option" id="Fields" name="Fields">
+        <option disabled="disabled" selected="selected"> Choose option</option>
+        <option>Company</option>
+        <option>Distributer</option>
+        <option>Retails</option>
+        <option>Shopkeeper</option>
+    </select>
+    <form action="Resume.html">
+        <label id="U" for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label id="U2" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label id="U3" for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+        <label id="U4" for="Contact">Contact no.:</label>
+        <input type="Contact" id="Contact" name="Contact" placeholder="Enter your Contact" required><br>
+       
+
+        <!-- <body style=" ">  -->
+        <div class="wrap">
+            <button type="submit" onclick="solve()">Submit</button>
+        </div>
+    </form>
+</div>
+    
+  
+{% endblock body %}
